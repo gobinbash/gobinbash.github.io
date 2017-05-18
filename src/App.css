@@ -5,13 +5,37 @@
   height: 100%;
 }
 .App h1{
-  font-size: 3em;
+  font-size: 3rem;
   color: #ddd;
 }
 .red{
   color: #f45;
+  animation: colorAnimation 2s infinite;
 }
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@keyframes colorAnimation {
+  10%{
+    color: red;
+  }
+  20%{
+    color: #f44336;
+  }
+  30%{
+    color:#E91E63;
+    font-size: 1.5em;
+  }
+  40%{
+    color:#9C27B0;
+  }
+  50%{
+    color:#00BCD4;
+  }
+  60%{
+    color:#009688;
+  }
+  70%{
+    color: #FFEB3B;
+  }
+  100%{
+    color: blue;
+  }
 }
