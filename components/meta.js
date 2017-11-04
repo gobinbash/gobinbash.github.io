@@ -1,9 +1,9 @@
 import Head from 'next/head'
 
-export default () => (
+export default ({ title }) => (
     <div>
     <Head>
-      <title>binbash.co</title>
+      <title>{ title }</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="utf-8" />
       <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"/>
@@ -14,18 +14,24 @@ export default () => (
           margin:0;
           box-sizzing: border-box;
       }
-      body { 
-        background: #2e2e4e;
-        font: 11px menlo;
-        color: #fff;
-        font-family: Inconsolata,monospace;
+      html {
+        height: 100%;
       }
+      body { 
+        font: 11px menlo;
+        font-family: Inconsolata,monospace;
+        height:100%;
+      }
+
+
       .app {
-        height:100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        color: #fff;
+        background: #2e2e4e;
+        min-height: 100vh;
       }
     `}</style>
   </div>
