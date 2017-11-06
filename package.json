@@ -11,6 +11,7 @@
     "start": "next start",
     "build": "next build",
     "dev": "next dev",
-    "export": "next export"
+    "export": "next build && next export && npm run copy",
+    "copy": "cp ./public/CNAME ./out/ && cp ./public/.gitignore ./out/ && cp ./public/favicon.ico ./out/"
   }
 }
